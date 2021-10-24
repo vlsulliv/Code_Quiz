@@ -1,10 +1,20 @@
 <img src="https://www.marcobeltempo.com/wp-content/uploads/2017/12/markdown_banner.png">
----
-## Summary
 
+<br/>
+<br/>
+
+## Code Quiz
+---
+```
+test your skills
+```
+## Summary
 ```
 Problem statement
 ```
+
+## Screen Shot
+![image](https://www.vitruvianpartners.com/wp-content/uploads/placeholder-banner.png "placeholder")
 
 ## Solution
 
@@ -25,8 +35,8 @@ foobar.singularize('phenomena')
 ```
 
 
-## References & Thanks
-
+## References 
+[questions from w3schools](https://www.w3schools.com/quiztest/result.asp)
 ```
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
