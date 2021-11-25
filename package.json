@@ -1,0 +1,23 @@
+{
+  "name": "codequiz",
+  "version": "1.0.0",
+  "description": "<img src=\"https://www.marcobeltempo.com/wp-content/uploads/2017/12/markdown_banner.png\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlsulliv/CodeQuiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlsulliv/CodeQuiz/issues"
+  },
+  "homepage": "https://github.com/vlsulliv/CodeQuiz#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -12,98 +12,120 @@
 moment().format()
 console.log(moment().format('LLL'))
 console.log('MMMM Do YYYY, h:mm:ss a')
-console.log('dddd');
-console.log("MMM Do YY");
-console.log('YYYY [escaped] YYYY');
-console.log("20111031", "YYYYMMDD");
-console.log("20120620", "YYYYMMDD");
-console.log(moment("20111031", "YYYYMMDD").fromNow()) 	// 9 years ago
-console.log(moment("20120620", "YYYYMMDD").fromNow()); 	// 9 years ago
-console.log(moment().startOf('minute').fromNow());        	// 2 hours ago
-console.log(moment().endOf('day').fromNow());          	// in a day
-console.log(moment().startOf('hour').fromNow()); 
-console.log(moment().format('LT'));  
-console.log(moment().format('LTS'));
-console.log(moment().format('L')); 
-console.log(moment().format('l'));    		
-console.log(moment().format('LL'));  
-console.log(moment().format('ll'));  
-console.log(moment().format('s ss'));  
-console.log(moment().format('1 mm'));  
 
-console.log(moment.utc().seconds(30))
 
-let timeInMinutes = 3*60*1000
-let deadline = timeInMinutes - 1;
-console.log(deadLine)
-let duration = moment().duration(10, 'seconds');
-console.log(duration)
+console.log("==========================================================================================================================")
+
+const eventTime = 1366549200;
+const currentTime = 1366547400;
+const diffTime = eventTime - currentTime;
+let duration = moment.duration(diffTime * 1000, 'milliseconds');
+const interval = 1000;
+const countdown = document.querySelector('time')
+
+
+setInterval(() => {
+  duration = moment.duration(duration - interval, 'milliseconds');
+  countdown.innerText = "Time: " + duration.hours() + ":" + duration.minutes() + ":" + duration.seconds()
+}, interval);
+
+console.log("==========================================================================================================================")
 
 
 
-/* LOCAL STORAGE */
+let user_answers = [];
+user_answers.push("A")
+user_answers.push("A")
+user_answers.push("A")
+console.log(user_answers[0])
+console.log(user_answers)
+
+console.log("==========================================================================================================================")
+
+let buildQuiz = document.getElementById("submit")
+let clicker = 0;
+buildQuiz.addEventListener('click', function(){
+    console.log(clicker)
+    let hide = document.getElementsByClassName('start-container');
+    console.log('show')
+    let show = document.getElementById('show');
+    show.innerHTML = q1
+    clicker = 1
+    console.log(clicker)
+})
+
+function myFunction() {
+  var x = document.getElementById("q");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    showQuestion
+  } else {
+    x.style.display = "none";
+  }
+}
+const targetDiv = document.getElementById("third");
+const btn = document.getElementById("toggle");
+btn.onclick = function () {
+  let show = document.getElementsByClassName('show');
+
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+    show.innerHTML(q1)
+
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
+
+function showQuestion(){
+  let q = document.getElementById("el");
+  q.innerHTML = q1
+}
+
+console.log("==========================================================================================================================")
+
+
+
+let q1 = "Which of the following function of Array object removes the first element from an array and returns that element?"
+let q2 = "Which event occurs when the user clicks on an HTML element?"
+let q3 = "Which operator is used to assign a value to a variable?"
+let q4 = "Which built-in method returns the calling string value converted to upper case?"
+let q5 = "Which of the following function of Boolean object returns a string containing the source of the Boolean object?"
+let q6 = "Which of the following function of String object returns the index within the calling String object of the first occurrence of the specified value?"
+
+let q1_choices = "A: reverse(), B: shift(), C: slice(), D: ome()"
+let q2_choices = "A: onmouseclick, B: onchange, C: onmouseover, D: onclick"
+let q3_choices = "A: -, B:  = , C:  x , D:  *b , correct:  B "
+let q4_choices = "A: toUpperCase() , B: toUpper() , C: changeCase(case) , D: None of the above" 
+let q5_choices = "A: toSource() , B:  valueOf() , C:  toString() , D:  None of the above"
+let q6_choices = "A: substr(), B:  search(), C:  lastIndexOf(), D:  indexOf()"
+
+console.log("==========================================================================================================================")
+
+let choices = ["q1_choices", ["A: reverse()", "B: shift()", "C: slice()", "D: ome()"]]
+    // {q1_choices: [A: " onmouseclick", B: "onchange", C: "onmouseover", D: "onclick"]},
+    // {question: "Which operator is used to assign a value to a variable?", A: "-", B: "=", C: "x", D: "*b"},
+    // {A: "  toUpperCase()", B: "  toUpper()", C: "  changeCase(case)", D: "  None of the above" },
+    // {A: "toSource()", B: "valueOf()", C: "toString()", D: "None of the above"},
+    // {A: "substr()", B: "search()", C: "lastIndexOf()", D: "indexOf()"}
+
+// for (i = 0; i)
+let correct = ["B", "D", "B", "A", "A", "D"];
+
+
+function display(){
+let showQuestion = document.getElementsByClassName('start-container');
+
+var displaySetting = startElement.style.display;
+var submit = document.getElementById('submit');
+if (displaySetting == 'block') {
+  // clock is visible. hide it
+  showQuestion.style.display = 'none';
+  // change button text
+  submit.innerHTML = 'Show clock';
+} else {
+  showQuestion = 'block'
+  submit.innerHTML = 'show'
+}}
+
 localStorage.setItem(01, "vincent sullivan");
-// localStorage.getItem('');        // get item
-// localStorage.removeItem('');     // remove item
-// localStorage.clear();             // clear all
-
-
-
-/* QUESTIONS */
-var questions = [
-    {
-    question: "The external JavaScript file must contain the <script> tag.",
-    answers: {
-        a: "true",
-        b: "false",
-    },
-    correct: "false"
-    },
-    {
-    question: "Which event occurs when the user clicks on an HTML element?",
-    answers: {
-        a: "onmouseclick",
-        b: "onchange",
-        c: "onmouseover",
-        d: "onclick",
-    },
-    correct: "d"
-    },
-    {
-    question: "Which operator is used to assign a value to a variable?",
-    answers: {
-        a: "-",
-        b: "=",
-        c: "x",
-        d: "*b",
-    },
-    correct: "b"
-    },
-    {
-    question: "Is JavaScript case-sensitive?",
-    answers: {
-        a: "No",
-        b: "Yes",
-    },
-    correct: "b"
-    },
-    {
-    question: "Where is the correct place to insert a JavaScript?",
-    answers: {
-        a: "The <head> section",
-        b: "The <body> section",
-        c: "Both the <head> section and the <body> section are correct",
-    },
-    correct: "c"}
-  ]
-  
-  let answers = [];
-  let output = [];
-
-
-
-// use "start quiz" div to show questions with append child
-
-// add query selector to buttons
-
-
