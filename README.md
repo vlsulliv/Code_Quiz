@@ -13,6 +13,24 @@ test your skills
 Problem statement
 ```
 
+## Pseudocode
+```
+General
+1. use "start quiz" div to show questions with append child
+2. add query selectors to buttons
+3. check if selected answer matches correct ans
+4. track answers by pushing into array
+5. display results
+6. add initials form
+7. add initials to local store */
+
+Quiz Questions
+1. loop through questions
+2. display each 
+3. get user response
+4. determine correctness 
+```
+
 ## Screen Shot
 ![image](https://www.vitruvianpartners.com/wp-content/uploads/placeholder-banner.png "placeholder")
 

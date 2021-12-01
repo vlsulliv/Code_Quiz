@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="utf-8">
 
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <title>Code Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://kit.fontawesome.com/a2e3a24933.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
   </head>
-
+  <style>
+  *{
+  margin : 0px;
+  padding : 0px;
+  box-sizing : border-box; 
+  } 
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 50px;
+    background-color: white;
+    height: 100%;
+  }
+  </style>
   <body>
 
     <div class="row">
@@ -20,34 +35,24 @@
       </div>
     </div>
 
-    <div class="start-container" id="el">
+    <div class="content" id="el">
       <div class="start-quiz" id="question">
         <div class="start" id="answer">
-          <h3 id="q">Question</h3>
-          <p id="show">fasd</p>
+          <h3 id="q">Welcome to Code Quiz</h3>
+          <p id="show">Click start to begin quiz!</p>
           <button class="A"></button>
           <button class="B"></button>
           <button class="C"></button>
           <button class="D"></button>
-          <button class="start-button" id="submit">Click Me!</button> 
+          <button class="start-button" id="submit">Start</button> 
         </div>
       </div>
     </div>
 
 
-    <div id="first">This is the FIRST div</div>
-    <div id="second">This is the SECOND div</div>
-    <div id="third">This is the THIRD div</div>
-    <button id="toggle">Hide THIRD div</button>
-
-
-    <div id="quiz"></div>
-    <button id="submit">Get Results</button>
-    <div id="results"></div>
-
   <div class="results" id="results"></div>
 
-    <script src="./src/js/app.js"></script>
+  <script src="./src/js/app.js"></script>
 
   </body>
 </html>

@@ -1,75 +1,84 @@
-*{
-    margin : 0px;
-    padding : 0px;
-    box-sizing : border-box; 
-}
-html {
-    background-color:#282C34;
-    height:100%;
-    color: #FFFFFF;
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+
+:root {
+    background-color: rgb(29,26,26);
 }
 
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin:10px;
-    background-color:#282C34;
-    height:100%;
-    border:8px 
+    border:8px;
     inset #80C090;
     font-size : 12px;
-    font-family : sans-serif;
+    font-family: 'Nova Square', cursive;
     border-style: dashed;
-    padding:1%
-}
+    padding: 10px;
+} 
+
 .row {
     display: flex;
 }
+
 #cl {
     flex: 50%;
-
 }
+
 #cr {
     flex: 50%;
     float: right !important;
     vertical-align: top;
 }
   
-timer {
-    text-align: right;
+.time {
+    position: absolute;
+    right: 120px;
+    font-size: large;
+    font-weight: bold;
 }
-.start-container {
+
+.content {
     padding-top: 150px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
 }
+
 .start-quiz {
     padding: 5px;
+    padding-left: 430px;
     margin: auto;
     width: 50%;
     display: flex;
-    /* justify-content: center; */
-    outline: dashed 3px white;
-    /* Center child horizontally*/
-    display: flex;
-    justify-content: left;
+    align-items: center;
+    /* outline: solid 3px black; */
+
+    height: 400px;
 }
+
 .start {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     width: fit-content;
-    height: 100px;
+    /* height: 100px; */
     padding-bottom: 20px;
 }
+
 .start-button {
     display: block;
     cursor: pointer;
     color: white;
-    /* padding-top: 50px; */
+    padding: 10px 30px;
+    margin: auto;
+    letter-spacing: 2px;
+    font-size: 16px;
+    background-color: darkcyan;
 }
-.start-button button:hover {
+
+button:hover {
     background-color: #EE6A49;
   }
+
 .results {
     display: block;
     padding: 7px;
@@ -78,8 +87,4 @@ timer {
     margin-left: 5px;
     margin-right: 5px;
 }
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
+
