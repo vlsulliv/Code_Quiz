@@ -18,6 +18,10 @@ body {
     padding: 10px;
 } 
 
+html {
+    text-align: center;
+}
+
 .row {
     display: flex;
 }
@@ -39,21 +43,31 @@ body {
     font-weight: bold;
 }
 
-.content {
-    padding-top: 150px;
-    /* display: flex; */
-}
 
-.start-quiz {
+.content {
+    /* padding-top: 150px; */
     padding: 5px;
-    padding-left: 430px;
+    /* padding-left: 430px; */
     margin: auto;
-    width: 50%;
-    display: flex;
+    /* width: 500%; */
+    display: inline-flex;
     align-items: center;
     /* outline: solid 3px black; */
+    text-align: center;
+    height: auto;
+}
 
-    height: 400px;
+#mcq{
+    /* padding-top: 150px; */
+    padding: 5px;
+    /* padding-left: 430px; */
+    margin: auto;
+    /* width: 500%; */
+    display: inline-flex;
+    align-items: center;
+    /* outline: solid 3px black; */
+    text-align: center;
+    height: auto;
 }
 
 .start {
@@ -62,6 +76,8 @@ body {
     width: fit-content;
     /* height: 100px; */
     padding-bottom: 20px;
+    text-align: center;
+    padding-top: 150px;
 }
 
 .start-button {
@@ -73,6 +89,7 @@ body {
     letter-spacing: 2px;
     font-size: 16px;
     background-color: darkcyan;
+    margin-top:20px;
 }
 
 button:hover {
