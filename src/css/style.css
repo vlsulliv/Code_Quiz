@@ -1,50 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 
-:root {
-    background-color: rgb(29,26,26);
+
+*, *:before, *:after {
+     box-sizing: border-box;
+     font-size: 16px;    
+     font-family: 'Nova Square', cursive;
 }
 
-* {
-    box-sizing: border-box;
-}
+body{
+    height: 100vh;
+    width: 100vw;
+    inset: #80C090;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
-body {
-    margin:10px;
-    border:8px;
-    inset #80C090;
-    font-size : 12px;
-    font-family: 'Nova Square', cursive;
-    border-style: dashed;
-    padding: 10px;
-} 
+}
 
 html {
+    border-style: dashed; 
+    background-color: white;
     text-align: center;
-}
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
 
-.row {
-    display: flex;
-}
+} 
 
-#cl {
-    flex: 50%;
-}
-
-#cr {
-    flex: 50%;
-    float: right !important;
-    vertical-align: top;
+.nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    /* float: top; */
+    /* justify-content:space-evenly; */
 }
   
 .time {
-    position: absolute;
-    right: 120px;
+    /* position: absolute; */
+    right: 50px;
     font-size: large;
     font-weight: bold;
 }
 
+/* .container {
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px;
+    width: 800px;
+    max-width: 80%;
+    height: 150px;
+    align-items: center;
+    outline: solid 3px black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(white);
+    padding: 20px;
+    
+} */
 
-.content {
+.ans-btns {
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 5px;
+    margin: 20px, 0;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.0rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.allBtn{
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* #mcq{
     /* padding-top: 150px; */
     padding: 5px;
     /* padding-left: 430px; */
@@ -54,21 +88,8 @@ html {
     align-items: center;
     /* outline: solid 3px black; */
     text-align: center;
-    height: auto;
-}
-
-#mcq{
-    /* padding-top: 150px; */
-    padding: 5px;
-    /* padding-left: 430px; */
-    margin: auto;
-    /* width: 500%; */
-    display: inline-flex;
-    align-items: center;
-    /* outline: solid 3px black; */
-    text-align: center;
-    height: auto;
-}
+    height: auto; */
+/* } */
 
 .start {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -80,21 +101,16 @@ html {
     padding-top: 150px;
 }
 
-.start-button {
-    display: block;
-    cursor: pointer;
-    color: white;
-    padding: 10px 30px;
-    margin: auto;
-    letter-spacing: 2px;
-    font-size: 16px;
-    background-color: darkcyan;
-    margin-top:20px;
-}
 
 button:hover {
-    background-color: #EE6A49;
-  }
+    background-color: darkcyan;
+    color:white;
+}
+
+.question {
+    text-align: left;
+    font-size: 25px;
+}
 
 .results {
     display: block;

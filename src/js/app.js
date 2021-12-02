@@ -1,45 +1,34 @@
-/* TIMER */
-moment().format()
-console.log(moment().format('LLL'))
-console.log('MMMM Do YYYY, h:mm:ss a')
+// /* TIMER */
+// moment().format()
+// console.log(moment().format('LLL'))
+// console.log('MMMM Do YYYY, h:mm:ss a')
 
 /* VAR DECLATIONS */
-var score; 
+let score = 0; 
+let userAnswers = [];
+let clock = document.getElementById('timer');
 
 /* TIMER */
-const eventTime = 1366549200;
-const currentTime = 1366547400;
-const diffTime = eventTime - currentTime;
-let duration = moment.duration(diffTime * 1000, 'milliseconds');
-const interval = 1000;
-const countdown = document.querySelector('time')
-
-setInterval(() => {
-  duration = moment.duration(duration - interval, 'milliseconds');
-  countdown.innerText = "Time: " + duration.hours() + ":" + duration.minutes() + ":" + duration.seconds()
-}, interval);
-
-console.log("====================================")
-
-function begin() {
-  var x = document.getElementById('el')
-  var y = document.getElementById('mcq')
-  if(y.style.display === "none") {
-    console.log("x")
-    x.style.display = "none"
-    console.log("y")
-    y.style.display;
-  } else {
-    y.style.display = "none";
-    x.style.display = "block";
-  }
-}
+function startTimer(duration, display) {
+  var timer = duration, minutes, seconds;
+  setInterval(function () {
+      minutes = parseInt(timer / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+      display.textContent = minutes + ":" + seconds;
+      if (--timer < 0) {timer = duration;}}, 1000);}
+window.onload = function () {
+  var fiveMinutes = 60 * 5,
+      display = document.querySelector('#timer');
+  startTimer(fiveMinutes, display);
+};
 
 console.log("====================================")
 
 let questions = [
   {
-    question: "Which of the following function of Array object removes the first element from an array and returns that element?\n(a) reverse()\n(b) shift()\n(c) slice()\n(d) ome()",
+    question: "Which of the following function of Array object removes the first element from an array and returns that element?\n(a) reverse()\n(b) shift()\n(c) slice()\n(d) some()",
     answer: "b"
   },
   {
@@ -64,27 +53,4 @@ let questions = [
   }
 ]
 
-let btn = document.getElementById('submit')
-btn.addEventListener(onclick, function(e) {
-  e.preventDefault;
-  console.log('clicked')
-  display();
-})
-const {one, two, three, four, five, six} = question
-console.log(questions[0].question);
-console.log(questions.one);
-console.log(questions.two);
 
-// for(var i=0; i<questions.length;i++){
-//   var response = window.prompt(questions[i].prompt);
-//   if(response == questions[i].answer){
-//   score++
-//   alert("good");
-//   } else {
-//     alert("incorrect");
-//   }
-// }
-// alert("score: " + score);
-
-
-localStorage.setItem(01, "vincent sullivan");
