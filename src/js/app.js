@@ -1,9 +1,10 @@
-// /* TIMER */
-// moment().format()
-// console.log(moment().format('LLL'))
-// console.log('MMMM Do YYYY, h:mm:ss a')
+/* 4 Essential tasks/functions:
+1. start the game
+2. set the next question
+3. select answer and validate
+4. clean up small tasks such as time, high score, etc... */
 
-/* VAR DECLATIONS */
+
 let score = 0; 
 let userAnswers = [];
 let clock = document.getElementById('timer');
@@ -23,8 +24,50 @@ window.onload = function () {
       display = document.querySelector('#timer');
   startTimer(fiveMinutes, display);
 };
-
 console.log("====================================")
+
+let questionElement = document.getElementById('question');
+let answerButtonElements = document.getElementById('buttons')
+let = startButton = document.getElementById('start-btn')
+let questionContainer = document.getElementById('question-Container');
+startButton.addEventListener('click', startGame)
+
+function startGame() {
+  console.log('game has started');
+  startButton.classList.add('hide');
+  questionContainerElement.classList.remove('hide')
+
+}
+
+function setNctQuestion() {
+
+}
+
+function showQuestion(question) {
+  questionElement.innerText = question.question;
+  question.answers.forEach(answer => {
+    let button = document.createElement('button')
+    button.innerText = answer.text;
+    button.classLis.add('btn');
+    if(answer.correct) {
+      answerButtonElements.removeChile
+      ( answerButtonElements.removeChile)  }
+  })
+}
+
+function resetState(){
+  nextButton.classList.add('hide')
+  while (answerButtonElements) firstChild();
+}
+
+function selectAnswer( {
+  nextButton.classList.add('hide');
+  while (answerButton
+
+})
+
+
+
 
 let questions = [
   {

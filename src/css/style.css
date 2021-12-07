@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 
 
-*, *:before, *:after {
+:before, *:after {
      box-sizing: border-box;
      font-size: 16px;    
      font-family: 'Nova Square', cursive;
@@ -42,6 +42,7 @@ html {
     right: 50px;
     font-size: large;
     font-weight: bold;
+    color: white;
 }
 
 /* .container {
@@ -65,31 +66,27 @@ html {
     grid-template-columns: repeat(2, auto);
     gap: 5px;
     margin: 20px, 0;
+    margin: 20px;
+    padding: 30px;
+    padding-top: 60px;
+    border-radius: 10px;
 }
 
 .start-btn, .next-btn {
     font-size: 1.0rem;
     font-weight: bold;
     padding: 10px 20px;
+
+}
+
+.next-btn {
+    display:none;
 }
 
 .allBtn{
     border-radius: 5px;
     padding: 5px 10px;
 }
-
-/* #mcq{
-    /* padding-top: 150px; */
-    padding: 5px;
-    /* padding-left: 430px; */
-    margin: auto;
-    /* width: 500%; */
-    display: inline-flex;
-    align-items: center;
-    /* outline: solid 3px black; */
-    text-align: center;
-    height: auto; */
-/* } */
 
 .start {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -114,10 +111,9 @@ button:hover {
 
 .results {
     display: block;
-    padding: 7px;
-    padding: 5px;
+
     margin-top: 0.5em;
-    margin-left: 5px;
-    margin-right: 5px;
+    /* margin-left: 5px;
+    margin-right: 5px; */
 }
 
