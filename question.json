@@ -1,0 +1,50 @@
+[
+	{
+		"q1": "Which of the following function of Array object removes the first element from an array and returns that element?",
+		"(a)": "reverse()",
+		"(b)": "shift()",
+		"(c)": "slice()",
+		"(d)": "some()",
+		"q1ans": "b"
+	},
+	{
+		"q2": "Which event occurs when the user clicks on an HTML element?",
+		"(a)": "onmouseclick",
+		"(b)": "onchange",
+		"(c)": "onmouseover",
+		"(d)": "onclick",
+		"q2ans": "d"
+	},
+	{
+		"q3": "Which operator is used to assign a value to a variable?",
+		"(a)": "-",
+		"(b)": "=",
+		"(c)": "x",
+		"(d)": "*b",
+		"q3ans": "b"
+	},
+	{
+		"q4": "Which built-in method returns the calling string value converted to upper case?",
+		"(a)": "toUpperCase()",
+		"(b)": "toUpper()",
+		"(c)": "changeCase(case)",
+		"(d)": "None of the above",
+		"q4ans": "a"
+	},
+	{
+		"q5": "Which of the following function of Boolean object returns a string containing the source of the Boolean object?",
+		"(a)": "toSource()",
+		"(b)": "valueOf()",
+		"(c)": "toString()",
+		"(d)": "None of the above",
+		"q5abs": "a"
+	},
+	{
+		"q6": "Which of the following function of String object returns the index within the calling String object of the first occurrence of the specified value?",
+		"(a)": "substr()",
+		"(b)": "search()",
+		"(c)": "lastIndexOf()",
+		"(d)": "indexOf()",
+		"q6ans": "d"
+	}
+]

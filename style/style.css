@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+:root {
+    --palette-primary: #222;
+    --palette-secondary: #4974a5;
+    --palette-tertiary: #505b64;
+    --text-01: #00dba3;
+    --text-02: #fff;
+    --accent-01: #df2828;
+    --accent-02: #68f37f;
+    --accent-03: #3f9cff;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    inset: #80C090;
+}
+
+html {
+    background-color: whitesmoke;
+    color: var(--text-02);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+
+header {
+    background-color: var(--palette-primary);
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    color: var(--text-02);
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+nav {
+    background-color: #24252a;
+    align-items: left;
+    display: flex;
+    justify-content: right;
+    color: var(--text-02);
+    font-size: 2rem;
+}
+
+.nav__links {
+    list-style: none;
+    color: var(--text-02);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 1rem 5px 5px;
+    color: var(--text-02);
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+    font-size: 2rem;
+}
+
+
+.nav__links li a {
+    color: var(--text-02);
+    list-style: none;
+    color: var(--text-02);
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.nav__links li a:hover {
+    color: var(--text-02);
+}
+
+.time {
+    position: absolute;
+    right: 50px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    padding-right: 2rem;
+}
+
+.logo {
+    cursor: pointer;
+    height: 25px;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: var(--palette-primary);
+    align-items: center;
+    /* padding-top: 5rem; */
+    margin-top: 10rem;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 189, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 189, 0.8);
+
+}
+
+/* .container {
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px;
+    width: 800px;
+    max-width: 80%;
+    height: 150px;
+    align-items: center;
+    outline: solid 3px black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(white);
+    padding: 20px;
+    
+} */
+
+
+.container h1 {
+    padding: 20px 20px 50px 0;
+}
+
+.question {
+    text-align: left;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navigation {
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn {
+    padding: 10px 5px;
+    width: 15rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-02);
+}
+
+.btn:hover {
+    background-color: #3f9cff;
+}
+
+.navigation {
+    /* display:block; */
+    font-size: 1.0rem;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    /* height: 100px; */
+    padding-bottom: 20px;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+    margin: auto;
+}
+
+.ans-btns {
+    /* display: inline-flex; */
+    grid-template-columns: repeat(2, 2);
+    gap: 40px;
+    margin: 50px;
+    padding: 30px;
+}
+
+.start-btn {
+    width: 150px;
+    height: 50px;
+}
+
+.next-btn {
+    width: 150px;
+    height: 50px;
+
+}
+
+
+
+.question {
+    text-align: left;
+    font-size: 25px;
+}
+
+.ansBtn {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 189, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: var(--text-02);
+    font-size: 16px;
+}
+
+.label {
+    text-align: left;
+    vertical-align: text-top;
+    color:white;        
+}

@@ -5,36 +5,54 @@
 <head>
   <title>Code Quiz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./src/css/style.css" rel="stylesheet">
+  <link href="./style/reset.css" rel="stylesheet">
+  <link href="./style/style.css" rel="stylesheet">
+  <script src="./modules/timer.js"></script>
 </head>
 
 <body>
 
-  <!-- Timer/Highscore Items -->
-  <div class="nav">
-    <div class="nav-content">
-      <section class="scores">
-        <h2>view high scores</h2>
-        <progress value="0" max="10" id="progressBar"></progress>
-        <h2 id="timer" class="time">Time: </h2>
-      </section>
-    </div>
-  </div>question
-  <!-- Questions/choices will be displayed here -->
-  <div class="container">
-    <div id="question-container" class="hide">
-      <div id="question" class="question">Question</div>
-      <div id="btn-map" class="ans-btns">
-        <button class="btn" id="choice">Answer 1</button>
-        <button class="btn" id="choice">Answer 2</button>
-        <button class="btn" id="choice">Answer 3</button>
-        <button class="btn" id="choice">Answer 4</button>
+  <header>
+    <img src="./images/logo.png" alt="logo">
+    <nav>
+      <!-- <button class="viewScores" id="scores" input="submit">view scores</button> -->
+      <div class="timer" id="timer">
+        <h3>timer</h3>
       </div>
+      <!-- <h3>progress</h3> -->
+
+    </nav>
+    <ul class="nav__links">
+      <li><a class="cta" href="#">home</a></li>
+      <li><a class="cta" href="#">about</a></li>
+      <li><a class="cta" href="#">contact</a></li>
+    </ul>
+
+  </header>
+
+  <!-- Questions/choices will be displayed here -->
+
+  <div class="container" id="container">
+    <h1 class="label">Question</h1>
+
+    <div id="question-text" class="hide"></div>
+    <div>
+      <p class="question" id="question"></p>
+      <div id="question" class="question"></div>
+    </div>
+    <div id="ansBtns" class="ans-btns">
+      <button class="ansBtn" id="a">Answer a</button>
+      <button class="ansBtn" id="b">Answer b</button>
+      <button class="ansBtn" id="c">Answer c</button>
+      <button class="ansBtn" id="d">Answer d</button>
     </div>
     <!-- Start/Next Buttons -->
     <div id="navigation" class="allBtn">
-      <button id="start-btn" class="btn start-btn">Start</button>
-      <button id="next-btn btn" class="next-btn hide">Next</button>
+
+      <button onclick="showNextButton()" id="start-btn" class="btn start-btn">Start</button>
+
+      <button id="next-btn btn" class="next-btn btn">Next</button>
+
     </div>
   </div>
 
@@ -42,9 +60,9 @@
   <div class="results" id="results"></div>
 
   <!-- Link JS Scripts -->
+  <script src="main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
   <script src="https://kit.fontawesome.com/a2e3a24933.js" crossorigin="anonymous"></script>
-  <script src="./src/js/app.js"></script>
 
 </body>
 

@@ -1,0 +1,28 @@
+{
+  "name": "code_quiz",
+  "version": "1.0.0",
+  "description": "<img src=\"https://www.marcobeltempo.com/wp-content/uploads/2017/12/markdown_banner.png\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlsulliv/Code_Quiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlsulliv/Code_Quiz/issues"
+  },
+  "homepage": "https://github.com/vlsulliv/Code_Quiz#readme",
+  "dependencies": {
+    "code_quiz": "file:",
+    "core-js": "^3.22.1",
+    "ecmarkup": "^12.0.2",
+    "init-package-json": "^3.0.2",
+    "moment": "^2.29.3",
+    "retimer": "^3.0.0"
+  }
+}
